@@ -160,10 +160,24 @@ def menu_block(src, code):
             f'<span>{code.upper()}</span></summary><ul>{items}</ul></details><!-- /i18n:menu -->')
 
 
+def bust(html, src):
+    """Add ?v=<content hash> to local .css/.js links so browsers fetch a changed file instead of a cached one."""
+    import hashlib
+    def rep(m):
+        attr, path = m.group(1), m.group(2)
+        f = os.path.normpath(os.path.join(ROOT, os.path.dirname(src), path))
+        if not os.path.exists(f):
+            return m.group(0)
+        h = hashlib.sha1(open(f, 'rb').read()).hexdigest()[:8]
+        return f'{attr}="{path}?v={h}"'
+    return re.sub(r'(href|src)="((?![a-z]+:|/)[^"?#]+\.(?:css|js))(?:\?v=[0-9a-f]+)?"', rep, html)
+
+
 def put_blocks(html, src, code, menu_sel):
     """Insert or refresh the marked head and menu blocks in raw HTML (keeps the rest of the file byte for byte)."""
     html = re.sub(r'\s*<!-- i18n:head -->.*?<!-- /i18n:head -->', '', html, flags=re.S)
     html = re.sub(r'<!-- i18n:menu -->.*?<!-- /i18n:menu -->', '<!-- i18n:menu-slot -->', html, flags=re.S)
+    html = bust(html, src)
     html = html.replace('</head>', '  ' + head_block(src, code) + '\n</head>', 1)
     if '<!-- i18n:menu-slot -->' not in html:
         raise SystemExit(f'{src}: add <!-- i18n:menu --><!-- /i18n:menu --> where the language menu goes ({menu_sel})')
