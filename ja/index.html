@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Hoppy Blocks – 無料ブロックパズルゲーム | 8×8ブロック・宝石・300ステージ</title>
+<meta content="Hoppy Blocks は iPhone と Android 向けの無料ブロックパズルゲーム。ブロックを 8×8 のマスにドラッグしてラインを消し、300 のアドベンチャーステージで隠れた宝石を集めよう。オフラインで遊べて、家族みんなで楽しめます。" name="description"/>
+<meta content="#0D1238" name="theme-color"/>
+<link href="https://hoppyblocks.com/ja/" rel="canonical"/>
+<link href="../favicon.png" rel="icon"/>
+<link href="../apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="website" property="og:type"/>
+<meta content="Hoppy Blocks – 無料ブロックパズルゲーム" property="og:title"/>
+<meta content="ドラッグ。置く。ラインを消す。隠れた宝石いっぱいの 300 のアドベンチャーステージ。" property="og:description"/>
+<meta content="https://hoppyblocks.com/img/og.jpg" property="og:image"/>
+<meta content="https://hoppyblocks.com/ja/" property="og:url"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="index, follow" name="robots"/>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": [
+    "VideoGame",
+    "MobileApplication"
+  ],
+  "name": "Hoppy Blocks",
+  "alternateName": "Hoppy Blocks: Puzzle Game",
+  "url": "https://hoppyblocks.com/",
+  "image": "https://hoppyblocks.com/img/og.jpg",
+  "description": "無料のブロックパズルゲーム。ブロックを 8×8 のマスにドラッグして横や縦の列を消し、300 のアドベンチャーステージで隠れた宝石を集めよう。",
+  "genre": [
+    "Puzzle",
+    "Block puzzle",
+    "Casual"
+  ],
+  "gamePlatform": [
+    "iOS",
+    "Android"
+  ],
+  "operatingSystem": "iOS, Android",
+  "applicationCategory": "GameApplication",
+  "applicationSubCategory": "Puzzle",
+  "playMode": "SinglePlayer",
+  "inLanguage": [
+    "en",
+    "es",
+    "pt",
+    "fr",
+    "de",
+    "tr",
+    "id",
+    "ru",
+    "hy",
+    "ja",
+    "ko",
+    "zh",
+    "vi"
+  ],
+  "contentRating": "Everyone",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "Joytap Games",
+    "url": "https://www.youtube.com/@joytap_games"
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Hoppy Blocks は無料ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "はい。Hoppy Blocks は iPhone、iPad、Android 向けの無料ブロックパズルゲームで、家族向けの安全な広告で運営されています。アプリ内課金はありません。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "このブロックパズルはオフラインで遊べますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "はい。すべてのモードがインターネット接続なしで遊べます。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "進行状況は保存されますか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "はい、端末に保存されます。ベストスコア、アドベンチャーの星、プレイ中のゲームはアプリを閉じても残ります。"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "子どもにも安全ですか？",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "はい。アカウント、チャット、アプリ内課金はなく、広告は全年齢向けでパーソナライズされない内容に限られています。"
+      }
+    }
+  ]
+}</script>
+<link as="font" crossorigin="" href="../fonts/poppins-latin-800-normal.woff2" rel="preload" type="font/woff2"/>
+<link href="../home.css" rel="stylesheet"/>
+<!-- i18n:head --><link rel="alternate" hreflang="en" href="https://hoppyblocks.com/"><link rel="alternate" hreflang="es" href="https://hoppyblocks.com/es/"><link rel="alternate" hreflang="pt" href="https://hoppyblocks.com/pt/"><link rel="alternate" hreflang="fr" href="https://hoppyblocks.com/fr/"><link rel="alternate" hreflang="de" href="https://hoppyblocks.com/de/"><link rel="alternate" hreflang="tr" href="https://hoppyblocks.com/tr/"><link rel="alternate" hreflang="id" href="https://hoppyblocks.com/id/"><link rel="alternate" hreflang="ru" href="https://hoppyblocks.com/ru/"><link rel="alternate" hreflang="hy" href="https://hoppyblocks.com/hy/"><link rel="alternate" hreflang="ja" href="https://hoppyblocks.com/ja/"><link rel="alternate" hreflang="ko" href="https://hoppyblocks.com/ko/"><link rel="alternate" hreflang="zh-Hans" href="https://hoppyblocks.com/zh/"><link rel="alternate" hreflang="vi" href="https://hoppyblocks.com/vi/"><link rel="alternate" hreflang="x-default" href="https://hoppyblocks.com/"><script>(function(){var L=["en", "es", "pt", "fr", "de", "tr", "id", "ru", "hy", "ja", "ko", "zh", "vi"];try{document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('[data-lang]');if(a)localStorage.setItem('lang',a.getAttribute('data-lang'));});}catch(e){}})();</script><!-- /i18n:head -->
+</head>
+<body>
+<header class="nav">
+<a aria-label="Hoppy Blocks ホーム" class="brand" href="#top">
+<img alt="" height="36" src="../img/icon.png" width="36"/>
+<span>Hoppy <b>Blocks</b></span>
+</a>
+<nav>
+<a href="#features">特徴</a>
+<a href="#about">遊び方</a>
+<a href="#faq">よくある質問</a>
+<a class="nav-cta" href="#download">近日公開</a>
+<!-- i18n:menu --><details class="lang-menu" data-i18n-skip><summary aria-label="Language: 日本語"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm6.9 6h-2.9a15.7 15.7 0 0 0-1.4-3.6A8 8 0 0 1 18.9 8ZM12 4c.8 1.2 1.5 2.5 1.9 4h-3.8c.4-1.5 1.1-2.8 1.9-4ZM4.3 14a8.2 8.2 0 0 1 0-4h3.4a16.5 16.5 0 0 0 0 4H4.3Zm.8 2h2.9c.3 1.3.8 2.5 1.4 3.6A8 8 0 0 1 5.1 16ZM8 8H5.1a8 8 0 0 1 4.3-3.6C8.8 5.5 8.3 6.7 8 8Zm4 12c-.8-1.2-1.5-2.5-1.9-4h3.8c-.4 1.5-1.1 2.8-1.9 4Zm2.3-6H9.7a14.7 14.7 0 0 1 0-4h4.6a14.7 14.7 0 0 1 0 4Zm.3 5.6c.6-1.1 1.1-2.3 1.4-3.6h2.9a8 8 0 0 1-4.3 3.6Zm1.7-5.6a16.5 16.5 0 0 0 0-4h3.4a8.2 8.2 0 0 1 0 4h-3.4Z"/></svg><span>JA</span></summary><ul><li><a href="/" hreflang="en" lang="en" data-lang="en">English</a></li><li><a href="/es/" hreflang="es" lang="es" data-lang="es">Español</a></li><li><a href="/pt/" hreflang="pt" lang="pt" data-lang="pt">Português</a></li><li><a href="/fr/" hreflang="fr" lang="fr" data-lang="fr">Français</a></li><li><a href="/de/" hreflang="de" lang="de" data-lang="de">Deutsch</a></li><li><a href="/tr/" hreflang="tr" lang="tr" data-lang="tr">Türkçe</a></li><li><a href="/id/" hreflang="id" lang="id" data-lang="id">Bahasa Indonesia</a></li><li><a href="/ru/" hreflang="ru" lang="ru" data-lang="ru">Русский</a></li><li><a href="/hy/" hreflang="hy" lang="hy" data-lang="hy">Հայերեն</a></li><li><a href="/ja/" hreflang="ja" lang="ja" data-lang="ja" aria-current="true">日本語</a></li><li><a href="/ko/" hreflang="ko" lang="ko" data-lang="ko">한국어</a></li><li><a href="/zh/" hreflang="zh-Hans" lang="zh" data-lang="zh">简体中文</a></li><li><a href="/vi/" hreflang="vi" lang="vi" data-lang="vi">Tiếng Việt</a></li></ul></details><!-- /i18n:menu -->
+</nav>
+</header>
+<main id="top">
+<!-- HERO -->
+<section class="hero">
+<div class="hero-inner">
+<div class="hero-copy">
+<h1>
+<img alt="" class="wordmark" height="203" src="../img/wordmark.png" width="1100"/>
+<span class="sr-only">Hoppy Blocks – 無料ブロックパズルゲーム</span>
+</h1>
+<p class="tagline">ドラッグ。置く。<span class="gold">ラインを消す。</span></p>
+<p class="lead">iPhone と Android 向けの癒やし系<strong>ブロックパズル</strong>。きらきらの宝石ブロックを 8×8 のマスにドラッグして縦横の列を消し、連続消しで高得点を狙おう。エンドレスのクラシックで遊ぶもよし、300 のアドベンチャーステージで隠れた宝石を探すもよし。</p>
+<div class="stores">
+<span class="store">
+<svg aria-hidden="true" viewbox="0 0 24 24">
+<path d="M7 2h10a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Zm0 3v13h10V5H7Zm5 14.2a1 1 0 1 0 0 .01Z"></path>
+</svg>
+<span><small>近日公開</small>App Store</span>
+</span>
+<span class="store">
+<svg aria-hidden="true" viewbox="0 0 24 24">
+<path d="M5 3.5v17a1 1 0 0 0 1.5.86l14-8.5a1 1 0 0 0 0-1.72l-14-8.5A1 1 0 0 0 5 3.5Z"></path>
+</svg>
+<span><small>近日公開</small>Google Play</span>
+</span>
+</div>
+<p class="fineprint">無料・オフラインで遊べる</p>
+</div>
+<div aria-hidden="true" class="hero-art">
+<img alt="" class="mark" src="../img/mark.png"/>
+</div>
+</div>
+</section>
+<!-- FEATURES -->
+<section class="section" id="features">
+<h2>2つのモードと、見つける宝石</h2>
+<div class="cards">
+<article class="card">
+<img alt="" src="../img/piece-o-0.png"/>
+<h3>クラシック</h3>
+<p>エンドレスに遊べます。配られるピースは必ず置けるので、詰みの手札になることはありません。どこまでスコアを伸ばせる？</p>
+</article>
+<article class="card violet">
+<img alt="" src="../img/cube-amethyst.png"/>
+<h3>300 のアドベンチャーステージ</h3>
+<p>だんだん難しくなるスコアチャレンジと宝石探し。少ない手数でクリアすると星3つ。</p>
+</article>
+<article class="card gold-card">
+<svg aria-hidden="true" class="gem" viewbox="0 0 100 100">
+<path d="M28 18 L72 18 L92 40 L50 88 L8 40 Z" fill="#3FB8FF"></path>
+<path d="M28 18 L72 18 L62 40 L38 40Z" fill="#BFF0FF"></path>
+<path d="M28 18 L38 40 L8 40Z" fill="#8FE0FF"></path>
+<path d="M72 18 L92 40 L62 40Z" fill="#4FC4FF"></path>
+<path d="M8 40 L38 40 L50 88Z" fill="#6FD2FF"></path>
+<path d="M38 40 L62 40 L50 88Z" fill="#3FA8F5"></path>
+<path d="M62 40 L92 40 L50 88Z" fill="#1E7FE0"></path>
+<path d="M28 18 L72 18 L92 40 L50 88 L8 40 Z" fill="none" stroke="#0A1C5E" stroke-linejoin="round" stroke-width="7"></path>
+<path d="M33 22 L46 22 L40 34Z" fill="#fff"></path>
+</svg>
+<h3>隠れた宝石</h3>
+<p>ダイヤ、星、ハートがブロックに隠れていて、新しい宝石はピースに乗ってやってきます。その列を消して集めよう。</p>
+</article>
+<article class="card green">
+<img alt="" src="../img/piece-l-0.png"/>
+<h3>回転とヒント</h3>
+<p>ピースをタップすると回転、行き詰まったらヒント。少しずれて置いても自動でぴったりはまります。</p>
+</article>
+</div>
+</section>
+<!-- SCREENS -->
+<section class="section screens" id="screens">
+<h2>ゲーム画面</h2>
+<ul class="screen-row" role="list">
+<li class="phone">
+<div class="screen">
+<div aria-hidden="true" class="status">
+<span class="time">9:41</span><span class="island"></span><span class="icons"><svg viewbox="0 0 18 12">
+<rect height="4" rx="1" width="3" x="0" y="8"></rect>
+<rect height="6.5" rx="1" width="3" x="5" y="5.5"></rect>
+<rect height="9" rx="1" width="3" x="10" y="3"></rect>
+<rect height="12" rx="1" width="3" x="15" y="0"></rect></svg><svg viewbox="0 0 16 12">
+<path d="M8 2.6c2.4 0 4.6.9 6.2 2.5l1.3-1.3A10.6 10.6 0 0 0 8 .8 10.6 10.6 0 0 0 .5 3.8l1.3 1.3A8.8 8.8 0 0 1 8 2.6Zm0 3.6c1.4 0 2.7.5 3.7 1.5L13 6.4a7 7 0 0 0-10 0l1.3 1.3c1-1 2.3-1.5 3.7-1.5Zm0 3.6c.5 0 1 .2 1.3.5L8 11.6 6.7 10.3c.3-.3.8-.5 1.3-.5Z"></path></svg><svg viewbox="0 0 27 13">
+<rect fill="none" height="12" opacity=".4" rx="3.5" stroke="currentColor" width="23" x=".5" y=".5"></rect>
+<rect height="9" rx="2" width="17" x="2" y="2"></rect>
+<path d="M25 4.5v4c.8-.3 1.3-1.1 1.3-2s-.5-1.7-1.3-2Z" opacity=".4"></path></svg></span>
+</div>
+<img alt="クラシックとアドベンチャーのモードがあるホーム画面" height="1500" loading="lazy" src="../img/screens/screen-1.webp" width="786"/>
+<span aria-hidden="true" class="home-bar"></span>
+</div>
+</li>
+<li class="phone">
+<div class="screen">
+<div aria-hidden="true" class="status">
+<span class="time">9:41</span><span class="island"></span><span class="icons"><svg viewbox="0 0 18 12">
+<rect height="4" rx="1" width="3" x="0" y="8"></rect>
+<rect height="6.5" rx="1" width="3" x="5" y="5.5"></rect>
+<rect height="9" rx="1" width="3" x="10" y="3"></rect>
+<rect height="12" rx="1" width="3" x="15" y="0"></rect></svg><svg viewbox="0 0 16 12">
+<path d="M8 2.6c2.4 0 4.6.9 6.2 2.5l1.3-1.3A10.6 10.6 0 0 0 8 .8 10.6 10.6 0 0 0 .5 3.8l1.3 1.3A8.8 8.8 0 0 1 8 2.6Zm0 3.6c1.4 0 2.7.5 3.7 1.5L13 6.4a7 7 0 0 0-10 0l1.3 1.3c1-1 2.3-1.5 3.7-1.5Zm0 3.6c.5 0 1 .2 1.3.5L8 11.6 6.7 10.3c.3-.3.8-.5 1.3-.5Z"></path></svg><svg viewbox="0 0 27 13">
+<rect fill="none" height="12" opacity=".4" rx="3.5" stroke="currentColor" width="23" x=".5" y=".5"></rect>
+<rect height="9" rx="2" width="17" x="2" y="2"></rect>
+<path d="M25 4.5v4c.8-.3 1.3-1.1 1.3-2s-.5-1.7-1.3-2Z" opacity=".4"></path></svg></span>
+</div>
+<img alt="8×8 のマスでプレイ中のクラシック" height="1500" loading="lazy" src="../img/screens/screen-2.webp" width="786"/>
+<span aria-hidden="true" class="home-bar"></span>
+</div>
+</li>
+<li class="phone">
+<div class="screen">
+<div aria-hidden="true" class="status">
+<span class="time">9:41</span><span class="island"></span><span class="icons"><svg viewbox="0 0 18 12">
+<rect height="4" rx="1" width="3" x="0" y="8"></rect>
+<rect height="6.5" rx="1" width="3" x="5" y="5.5"></rect>
+<rect height="9" rx="1" width="3" x="10" y="3"></rect>
+<rect height="12" rx="1" width="3" x="15" y="0"></rect></svg><svg viewbox="0 0 16 12">
+<path d="M8 2.6c2.4 0 4.6.9 6.2 2.5l1.3-1.3A10.6 10.6 0 0 0 8 .8 10.6 10.6 0 0 0 .5 3.8l1.3 1.3A8.8 8.8 0 0 1 8 2.6Zm0 3.6c1.4 0 2.7.5 3.7 1.5L13 6.4a7 7 0 0 0-10 0l1.3 1.3c1-1 2.3-1.5 3.7-1.5Zm0 3.6c.5 0 1 .2 1.3.5L8 11.6 6.7 10.3c.3-.3.8-.5 1.3-.5Z"></path></svg><svg viewbox="0 0 27 13">
+<rect fill="none" height="12" opacity=".4" rx="3.5" stroke="currentColor" width="23" x=".5" y=".5"></rect>
+<rect height="9" rx="2" width="17" x="2" y="2"></rect>
+<path d="M25 4.5v4c.8-.3 1.3-1.1 1.3-2s-.5-1.7-1.3-2Z" opacity=".4"></path></svg></span>
+</div>
+<img alt="ダイヤ、星、ハートを集めるアドベンチャーのステージ14" height="1500" loading="lazy" src="../img/screens/screen-3.webp" width="786"/>
+<span aria-hidden="true" class="home-bar"></span>
+</div>
+</li>
+<li class="phone">
+<div class="screen">
+<div aria-hidden="true" class="status">
+<span class="time">9:41</span><span class="island"></span><span class="icons"><svg viewbox="0 0 18 12">
+<rect height="4" rx="1" width="3" x="0" y="8"></rect>
+<rect height="6.5" rx="1" width="3" x="5" y="5.5"></rect>
+<rect height="9" rx="1" width="3" x="10" y="3"></rect>
+<rect height="12" rx="1" width="3" x="15" y="0"></rect></svg><svg viewbox="0 0 16 12">
+<path d="M8 2.6c2.4 0 4.6.9 6.2 2.5l1.3-1.3A10.6 10.6 0 0 0 8 .8 10.6 10.6 0 0 0 .5 3.8l1.3 1.3A8.8 8.8 0 0 1 8 2.6Zm0 3.6c1.4 0 2.7.5 3.7 1.5L13 6.4a7 7 0 0 0-10 0l1.3 1.3c1-1 2.3-1.5 3.7-1.5Zm0 3.6c.5 0 1 .2 1.3.5L8 11.6 6.7 10.3c.3-.3.8-.5 1.3-.5Z"></path></svg><svg viewbox="0 0 27 13">
+<rect fill="none" height="12" opacity=".4" rx="3.5" stroke="currentColor" width="23" x=".5" y=".5"></rect>
+<rect height="9" rx="2" width="17" x="2" y="2"></rect>
+<path d="M25 4.5v4c.8-.3 1.3-1.1 1.3-2s-.5-1.7-1.3-2Z" opacity=".4"></path></svg></span>
+</div>
+<img alt="クリアしたステージに星が付いたアドベンチャーのマップ" height="1500" loading="lazy" src="../img/screens/screen-4.webp" width="786"/>
+<span aria-hidden="true" class="home-bar"></span>
+</div>
+</li>
+</ul>
+</section>
+<!-- FAMILY -->
+<section class="section family">
+<div class="family-card">
+<div>
+<h2>家族みんなで楽しめる</h2>
+<ul>
+<li>アカウントなし、チャットなし、アプリ内課金なし</li>
+<li>広告は全年齢向けでパーソナライズなし、プレイ中に割り込みません</li>
+<li>大きなボタン、読みやすい文字、楽しいリアクション</li>
+<li>オフライン対応、13 言語で遊べる</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- ABOUT (search-friendly copy) -->
+<section class="section about" id="about">
+<h2>おなじみのブロックパズルを、もっと楽しく</h2>
+<div class="about-grid">
+<div>
+<h3>遊び方</h3>
+<p>Hoppy Blocks はおなじみのブロックパズルのルールそのまま。3つのピースを 8×8 のマスにドラッグし、横か縦の列をそろえて消し、続けて消して連続ボーナスを狙おう。先を読んで。どのピースも置けなくなったらゲームオーバー。すぐ覚えられて、のんびり遊べる、毎日の脳トレにぴったりのゲームです。</p>
+</div>
+<div>
+<h3>ただのブロックゲームじゃない</h3>
+<p>エンドレスのクラシックに加えて、アドベンチャーではブロックパズルが 300 ステージの旅に。隠れたダイヤ、星、ハートを集め、スコアチャレンジを突破し、どの盤面でも星3つを目指そう。ピースを回転させ、ヒントを使い、どこでも、オフラインでも遊べます。</p>
+</div>
+<div>
+<h3>無料・オフライン・家族向け</h3>
+<p>Hoppy Blocks は iPhone、iPad、Android スマホ向けの無料パズルゲーム。アカウントもアプリ内課金もなく、広告は家族向けで安全。Wi-Fi なしでも遊べるので、通勤や飛行機、ちょっとした休憩にぴったりです。</p>
+</div>
+</div>
+</section>
+<!-- FAQ -->
+<section class="section" id="faq">
+<h2>よくある質問</h2>
+<div class="faq">
+<details>
+<summary>Hoppy Blocks は無料ですか？</summary>
+<p>はい。Hoppy Blocks は iPhone、iPad、Android 向けの無料ブロックパズルゲームで、家族向けの安全な広告で運営されています。アプリ内課金はありません。</p>
+</details>
+<details>
+<summary>進行状況は保存されますか？</summary>
+<p>はい、端末に保存されます。ベストスコア、アドベンチャーの星、プレイ中のゲームはアプリを閉じても残ります。アプリを削除すると消えます。</p>
+</details>
+<details>
+<summary>オフラインで遊べますか？</summary>
+<p>はい。すべて接続なしで動作します。広告が読み込まれないだけです。</p>
+</details>
+<details>
+<summary>子どもにも安全ですか？</summary>
+<p>はい。アカウント、チャット、アプリ内課金はありません。広告は全年齢向け・パーソナライズなし・子ども向けの内容に限られ、動画はプレイヤーが自分で見ることを選んだときだけ再生されます。</p>
+</details>
+<details>
+<summary>サウンドやバイブレーションをオフにするには？</summary>
+<p>ホーム画面のサウンドとバイブレーションのスイッチを使ってください。</p>
+</details>
+<details>
+<summary>バグを見つけた・アイデアがある</summary>
+<p><a href="mailto:hoppyblocks.support@gmail.com">hoppyblocks.support@gmail.com</a> までご連絡ください。お使いの端末と、iOS か Android かを書いていただけると助かります。</p>
+</details>
+</div>
+</section>
+<!-- FINAL CTA -->
+<section class="section final" id="download">
+<img alt="" class="final-icon" height="96" src="../img/icon.png" width="96"/>
+<h2>App Store で近日公開</h2>
+<p class="final-note">Hoppy Blocks はもうすぐ完成。iPhone、iPad、Android で無料で遊べます。</p>
+<div class="stores center">
+<span class="store">
+<svg aria-hidden="true" viewbox="0 0 24 24">
+<path d="M7 2h10a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Zm0 3v13h10V5H7Zm5 14.2a1 1 0 1 0 0 .01Z"></path>
+</svg>
+<span><small>近日公開</small>App Store</span>
+</span>
+<span class="store">
+<svg aria-hidden="true" viewbox="0 0 24 24">
+<path d="M5 3.5v17a1 1 0 0 0 1.5.86l14-8.5a1 1 0 0 0 0-1.72l-14-8.5A1 1 0 0 0 5 3.5Z"></path>
+</svg>
+<span><small>近日公開</small>Google Play</span>
+</span>
+</div>
+</section>
+<!-- STUDIO -->
+<section aria-labelledby="studio-title" class="section studio">
+<div class="studio-card">
+<img alt="" height="80" src="../img/joytap.webp" width="80"/>
+<div>
+<h2 id="studio-title">開発：Joytap Games</h2>
+<p>スマホで遊べる、穏やかでカラフルなゲーム。もうひとつのゲーム <a href="https://glossmaze.com/">Gloss Maze</a> は、転がるボールが通ったマスを塗っていく迷路ゲームです。</p>
+</div>
+<a class="yt" href="https://www.youtube.com/@joytap_games" rel="noopener">
+<svg aria-hidden="true" viewbox="0 0 24 24">
+<path d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2C2 8.8 2 12 2 12s0 3.2.4 4.8a2.5 2.5 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8c.4-1.6.4-4.8.4-4.8s0-3.2-.4-4.8ZM10 15V9l5.2 3L10 15Z"></path>
+</svg> YouTube で見る </a>
+</div>
+</section>
+</main>
+<footer class="footer"><span>© 2026 Joytap Games</span> <a href="privacy/">プライバシーポリシー</a> <a href="mailto:hoppyblocks.support@gmail.com">サポート</a> <a href="https://www.youtube.com/@joytap_games" rel="noopener">YouTube</a></footer>
+</body>
+</html>

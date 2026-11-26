@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Hoppy Blocks – 무료 블록 퍼즐 게임 | 8×8 블록, 보석, 300 레벨</title>
+<meta content="Hoppy Blocks는 iPhone과 Android용 무료 블록 퍼즐 게임입니다. 블록을 8×8 격자로 드래그해 줄을 없애고, 어드벤처 300 레벨에서 숨은 보석을 모으세요. 오프라인으로 즐길 수 있고 온 가족에게 좋아요." name="description"/>
+<meta content="#0D1238" name="theme-color"/>
+<link href="https://hoppyblocks.com/ko/" rel="canonical"/>
+<link href="../favicon.png" rel="icon"/>
+<link href="../apple-touch-icon.png" rel="apple-touch-icon"/>
+<meta content="website" property="og:type"/>
+<meta content="Hoppy Blocks – 무료 블록 퍼즐 게임" property="og:title"/>
+<meta content="드래그. 놓기. 줄 없애기. 숨은 보석이 가득한 어드벤처 300 레벨." property="og:description"/>
+<meta content="https://hoppyblocks.com/img/og.jpg" property="og:image"/>
+<meta content="https://hoppyblocks.com/ko/" property="og:url"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="index, follow" name="robots"/>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": [
+    "VideoGame",
+    "MobileApplication"
+  ],
+  "name": "Hoppy Blocks",
+  "alternateName": "Hoppy Blocks: Puzzle Game",
+  "url": "https://hoppyblocks.com/",
+  "image": "https://hoppyblocks.com/img/og.jpg",
+  "description": "무료 블록 퍼즐 게임: 블록을 8×8 격자로 드래그해 가로·세로 줄을 없애고, 어드벤처 300 레벨에서 숨은 보석을 모으세요.",
+  "genre": [
+    "Puzzle",
+    "Block puzzle",
+    "Casual"
+  ],
+  "gamePlatform": [
+    "iOS",
+    "Android"
+  ],
+  "operatingSystem": "iOS, Android",
+  "applicationCategory": "GameApplication",
+  "applicationSubCategory": "Puzzle",
+  "playMode": "SinglePlayer",
+  "inLanguage": [
+    "en",
+    "es",
+    "pt",
+    "fr",
+    "de",
+    "tr",
+    "id",
+    "ru",
+    "hy",
+    "ja",
+    "ko",
+    "zh",
+    "vi"
+  ],
+  "contentRating": "Everyone",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "Joytap Games",
+    "url": "https://www.youtube.com/@joytap_games"
+  }
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Hoppy Blocks는 무료인가요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "네. Hoppy Blocks는 iPhone, iPad, Android용 무료 블록 퍼즐 게임이며 가족에게 안전한 광고로 운영됩니다. 인앱 구매는 없습니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "이 블록 퍼즐을 오프라인으로 할 수 있나요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "네. 모든 모드가 인터넷 연결 없이 작동합니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "진행 상황이 저장되나요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "네, 기기에 저장됩니다. 최고 점수, 어드벤처 별, 진행 중인 게임은 앱을 닫아도 유지됩니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "아이에게 안전한가요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "네. 계정, 채팅, 인앱 구매가 없으며 광고는 전체 이용가의 비맞춤형 콘텐츠로 제한됩니다."
+      }
+    }
+  ]
+}</script>
+<link as="font" crossorigin="" href="../fonts/poppins-latin-800-normal.woff2" rel="preload" type="font/woff2"/>
+<link href="../home.css" rel="stylesheet"/>
+<!-- i18n:head --><link rel="alternate" hreflang="en" href="https://hoppyblocks.com/"><link rel="alternate" hreflang="es" href="https://hoppyblocks.com/es/"><link rel="alternate" hreflang="pt" href="https://hoppyblocks.com/pt/"><link rel="alternate" hreflang="fr" href="https://hoppyblocks.com/fr/"><link rel="alternate" hreflang="de" href="https://hoppyblocks.com/de/"><link rel="alternate" hreflang="tr" href="https://hoppyblocks.com/tr/"><link rel="alternate" hreflang="id" href="https://hoppyblocks.com/id/"><link rel="alternate" hreflang="ru" href="https://hoppyblocks.com/ru/"><link rel="alternate" hreflang="hy" href="https://hoppyblocks.com/hy/"><link rel="alternate" hreflang="ja" href="https://hoppyblocks.com/ja/"><link rel="alternate" hreflang="ko" href="https://hoppyblocks.com/ko/"><link rel="alternate" hreflang="zh-Hans" href="https://hoppyblocks.com/zh/"><link rel="alternate" hreflang="vi" href="https://hoppyblocks.com/vi/"><link rel="alternate" hreflang="x-default" href="https://hoppyblocks.com/"><script>(function(){var L=["en", "es", "pt", "fr", "de", "tr", "id", "ru", "hy", "ja", "ko", "zh", "vi"];try{document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('[data-lang]');if(a)localStorage.setItem('lang',a.getAttribute('data-lang'));});}catch(e){}})();</script><!-- /i18n:head -->
+</head>
+<body>
+<header class="nav">
+<a aria-label="Hoppy Blocks 홈" class="brand" href="#top">
+<img alt="" height="36" src="../img/icon.png" width="36"/>
+<span>Hoppy <b>Blocks</b></span>
+</a>
+<nav>
+<a href="#features">특징</a>
+<a href="#about">플레이 방법</a>
+<a href="#faq">FAQ</a>
+<a class="nav-cta" href="#download">곧 출시</a>
+<!-- i18n:menu --><details class="lang-menu" data-i18n-skip><summary aria-label="Language: 한국어"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm6.9 6h-2.9a15.7 15.7 0 0 0-1.4-3.6A8 8 0 0 1 18.9 8ZM12 4c.8 1.2 1.5 2.5 1.9 4h-3.8c.4-1.5 1.1-2.8 1.9-4ZM4.3 14a8.2 8.2 0 0 1 0-4h3.4a16.5 16.5 0 0 0 0 4H4.3Zm.8 2h2.9c.3 1.3.8 2.5 1.4 3.6A8 8 0 0 1 5.1 16ZM8 8H5.1a8 8 0 0 1 4.3-3.6C8.8 5.5 8.3 6.7 8 8Zm4 12c-.8-1.2-1.5-2.5-1.9-4h3.8c-.4 1.5-1.1 2.8-1.9 4Zm2.3-6H9.7a14.7 14.7 0 0 1 0-4h4.6a14.7 14.7 0 0 1 0 4Zm.3 5.6c.6-1.1 1.1-2.3 1.4-3.6h2.9a8 8 0 0 1-4.3 3.6Zm1.7-5.6a16.5 16.5 0 0 0 0-4h3.4a8.2 8.2 0 0 1 0 4h-3.4Z"/></svg><span>KO</span></summary><ul><li><a href="/" hreflang="en" lang="en" data-lang="en">English</a></li><li><a href="/es/" hreflang="es" lang="es" data-lang="es">Español</a></li><li><a href="/pt/" hreflang="pt" lang="pt" data-lang="pt">Português</a></li><li><a href="/fr/" hreflang="fr" lang="fr" data-lang="fr">Français</a></li><li><a href="/de/" hreflang="de" lang="de" data-lang="de">Deutsch</a></li><li><a href="/tr/" hreflang="tr" lang="tr" data-lang="tr">Türkçe</a></li><li><a href="/id/" hreflang="id" lang="id" data-lang="id">Bahasa Indonesia</a></li><li><a href="/ru/" hreflang="ru" lang="ru" data-lang="ru">Русский</a></li><li><a href="/hy/" hreflang="hy" lang="hy" data-lang="hy">Հայերեն</a></li><li><a href="/ja/" hreflang="ja" lang="ja" data-lang="ja">日本語</a></li><li><a href="/ko/" hreflang="ko" lang="ko" data-lang="ko" aria-current="true">한국어</a></li><li><a href="/zh/" hreflang="zh-Hans" lang="zh" data-lang="zh">简体中文</a></li><li><a href="/vi/" hreflang="vi" lang="vi" data-lang="vi">Tiếng Việt</a></li></ul></details><!-- /i18n:menu -->
+</nav>
+</header>
+<main id="top">
+<!-- HERO -->
+<section class="hero">
+<div class="hero-inner">
+<div class="hero-copy">
+<h1>
+<img alt="" class="wordmark" height="203" src="../img/wordmark.png" width="1100"/>
+<span class="sr-only">Hoppy Blocks – 무료 블록 퍼즐 게임</span>
+</h1>
+<p class="tagline">드래그. 놓기. <span class="gold">줄 없애기.</span></p>
+<p class="lead">iPhone과 Android용 편안한 <strong>블록 퍼즐</strong>. 반짝이는 보석 블록을 8×8 격자로 드래그해 가로·세로 줄을 없애고 연속으로 없애 높은 점수를 노리세요. 끝없는 클래식을 즐기거나 어드벤처 300 레벨에서 숨은 보석을 찾아보세요.</p>
+<div class="stores">
+<span class="store">
+<svg aria-hidden="true" viewbox="0 0 24 24">
+<path d="M7 2h10a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Zm0 3v13h10V5H7Zm5 14.2a1 1 0 1 0 0 .01Z"></path>
+</svg>
+<span><small>곧 출시</small>App Store</span>
+</span>
+<span class="store">
+<svg aria-hidden="true" viewbox="0 0 24 24">
+<path d="M5 3.5v17a1 1 0 0 0 1.5.86l14-8.5a1 1 0 0 0 0-1.72l-14-8.5A1 1 0 0 0 5 3.5Z"></path>
+</svg>
+<span><small>곧 출시</small>Google Play</span>
+</span>
+</div>
+<p class="fineprint">무료이며 오프라인으로 플레이 가능</p>
+</div>
+<div aria-hidden="true" class="hero-art">
+<img alt="" class="mark" src="../img/mark.png"/>
+</div>
+</div>
+</section>
+<!-- FEATURES -->
+<section class="section" id="features">
+<h2>두 가지 플레이 방식, 그리고 찾아야 할 보석</h2>
+<div class="cards">
+<article class="card">
+<img alt="" src="../img/piece-o-0.png"/>
+<h3>클래식</h3>
+<p>끝없이 플레이하세요. 주어지는 조각은 언제나 놓을 수 있어서 불가능한 패에 갇히지 않아요. 어디까지 갈 수 있을까요?</p>
+</article>
+<article class="card violet">
+<img alt="" src="../img/cube-amethyst.png"/>
+<h3>어드벤처 300 레벨</h3>
+<p>함께 성장하는 점수 도전과 보석 찾기. 적은 이동으로 끝내면 별 세 개를 모두 받아요.</p>
+</article>
+<article class="card gold-card">
+<svg aria-hidden="true" class="gem" viewbox="0 0 100 100">
+<path d="M28 18 L72 18 L92 40 L50 88 L8 40 Z" fill="#3FB8FF"></path>
+<path d="M28 18 L72 18 L62 40 L38 40Z" fill="#BFF0FF"></path>
+<path d="M28 18 L38 40 L8 40Z" fill="#8FE0FF"></path>
+<path d="M72 18 L92 40 L62 40Z" fill="#4FC4FF"></path>
+<path d="M8 40 L38 40 L50 88Z" fill="#6FD2FF"></path>
+<path d="M38 40 L62 40 L50 88Z" fill="#3FA8F5"></path>
+<path d="M62 40 L92 40 L50 88Z" fill="#1E7FE0"></path>
+<path d="M28 18 L72 18 L92 40 L50 88 L8 40 Z" fill="none" stroke="#0A1C5E" stroke-linejoin="round" stroke-width="7"></path>
+<path d="M33 22 L46 22 L40 34Z" fill="#fff"></path>
+</svg>
+<h3>숨은 보석</h3>
+<p>다이아몬드, 별, 하트가 블록 속에 숨어 있고 새 보석이 조각에 실려 와요. 그 줄을 없애 보석을 모으세요.</p>
+</article>
+<article class="card green">
+<img alt="" src="../img/piece-l-0.png"/>
+<h3>회전 &amp; 힌트</h3>
+<p>조각을 탭하면 회전하고, 막히면 힌트를 받을 수 있으며, 살짝 빗나가게 놓아도 알아서 제자리에 맞춰져요.</p>
+</article>
+</div>
+</section>
+<!-- SCREENS -->
+<section class="section screens" id="screens">
+<h2>게임 화면</h2>
+<ul class="screen-row" role="list">
+<li class="phone">
+<div class="screen">
+<div aria-hidden="true" class="status">
+<span class="time">9:41</span><span class="island"></span><span class="icons"><svg viewbox="0 0 18 12">
+<rect height="4" rx="1" width="3" x="0" y="8"></rect>
+<rect height="6.5" rx="1" width="3" x="5" y="5.5"></rect>
+<rect height="9" rx="1" width="3" x="10" y="3"></rect>
+<rect height="12" rx="1" width="3" x="15" y="0"></rect></svg><svg viewbox="0 0 16 12">
+<path d="M8 2.6c2.4 0 4.6.9 6.2 2.5l1.3-1.3A10.6 10.6 0 0 0 8 .8 10.6 10.6 0 0 0 .5 3.8l1.3 1.3A8.8 8.8 0 0 1 8 2.6Zm0 3.6c1.4 0 2.7.5 3.7 1.5L13 6.4a7 7 0 0 0-10 0l1.3 1.3c1-1 2.3-1.5 3.7-1.5Zm0 3.6c.5 0 1 .2 1.3.5L8 11.6 6.7 10.3c.3-.3.8-.5 1.3-.5Z"></path></svg><svg viewbox="0 0 27 13">
+<rect fill="none" height="12" opacity=".4" rx="3.5" stroke="currentColor" width="23" x=".5" y=".5"></rect>
+<rect height="9" rx="2" width="17" x="2" y="2"></rect>
+<path d="M25 4.5v4c.8-.3 1.3-1.1 1.3-2s-.5-1.7-1.3-2Z" opacity=".4"></path></svg></span>
+</div>
+<img alt="클래식과 어드벤처 모드가 있는 홈 화면" height="1500" loading="lazy" src="../img/screens/screen-1.webp" width="786"/>
+<span aria-hidden="true" class="home-bar"></span>
+</div>
+</li>
+<li class="phone">
+<div class="screen">
+<div aria-hidden="true" class="status">
+<span class="time">9:41</span><span class="island"></span><span class="icons"><svg viewbox="0 0 18 12">
+<rect height="4" rx="1" width="3" x="0" y="8"></rect>
+<rect height="6.5" rx="1" width="3" x="5" y="5.5"></rect>
+<rect height="9" rx="1" width="3" x="10" y="3"></rect>
+<rect height="12" rx="1" width="3" x="15" y="0"></rect></svg><svg viewbox="0 0 16 12">
+<path d="M8 2.6c2.4 0 4.6.9 6.2 2.5l1.3-1.3A10.6 10.6 0 0 0 8 .8 10.6 10.6 0 0 0 .5 3.8l1.3 1.3A8.8 8.8 0 0 1 8 2.6Zm0 3.6c1.4 0 2.7.5 3.7 1.5L13 6.4a7 7 0 0 0-10 0l1.3 1.3c1-1 2.3-1.5 3.7-1.5Zm0 3.6c.5 0 1 .2 1.3.5L8 11.6 6.7 10.3c.3-.3.8-.5 1.3-.5Z"></path></svg><svg viewbox="0 0 27 13">
+<rect fill="none" height="12" opacity=".4" rx="3.5" stroke="currentColor" width="23" x=".5" y=".5"></rect>
+<rect height="9" rx="2" width="17" x="2" y="2"></rect>
+<path d="M25 4.5v4c.8-.3 1.3-1.1 1.3-2s-.5-1.7-1.3-2Z" opacity=".4"></path></svg></span>
+</div>
+<img alt="8×8 격자에서 진행 중인 클래식 게임" height="1500" loading="lazy" src="../img/screens/screen-2.webp" width="786"/>
+<span aria-hidden="true" class="home-bar"></span>
+</div>
+</li>
+<li class="phone">
+<div class="screen">
+<div aria-hidden="true" class="status">
+<span class="time">9:41</span><span class="island"></span><span class="icons"><svg viewbox="0 0 18 12">
+<rect height="4" rx="1" width="3" x="0" y="8"></rect>
+<rect height="6.5" rx="1" width="3" x="5" y="5.5"></rect>
+<rect height="9" rx="1" width="3" x="10" y="3"></rect>
+<rect height="12" rx="1" width="3" x="15" y="0"></rect></svg><svg viewbox="0 0 16 12">
+<path d="M8 2.6c2.4 0 4.6.9 6.2 2.5l1.3-1.3A10.6 10.6 0 0 0 8 .8 10.6 10.6 0 0 0 .5 3.8l1.3 1.3A8.8 8.8 0 0 1 8 2.6Zm0 3.6c1.4 0 2.7.5 3.7 1.5L13 6.4a7 7 0 0 0-10 0l1.3 1.3c1-1 2.3-1.5 3.7-1.5Zm0 3.6c.5 0 1 .2 1.3.5L8 11.6 6.7 10.3c.3-.3.8-.5 1.3-.5Z"></path></svg><svg viewbox="0 0 27 13">
+<rect fill="none" height="12" opacity=".4" rx="3.5" stroke="currentColor" width="23" x=".5" y=".5"></rect>
+<rect height="9" rx="2" width="17" x="2" y="2"></rect>
+<path d="M25 4.5v4c.8-.3 1.3-1.1 1.3-2s-.5-1.7-1.3-2Z" opacity=".4"></path></svg></span>
+</div>
+<img alt="모을 다이아몬드, 별, 하트가 있는 어드벤처 레벨 14" height="1500" loading="lazy" src="../img/screens/screen-3.webp" width="786"/>
+<span aria-hidden="true" class="home-bar"></span>
+</div>
+</li>
+<li class="phone">
+<div class="screen">
+<div aria-hidden="true" class="status">
+<span class="time">9:41</span><span class="island"></span><span class="icons"><svg viewbox="0 0 18 12">
+<rect height="4" rx="1" width="3" x="0" y="8"></rect>
+<rect height="6.5" rx="1" width="3" x="5" y="5.5"></rect>
+<rect height="9" rx="1" width="3" x="10" y="3"></rect>
+<rect height="12" rx="1" width="3" x="15" y="0"></rect></svg><svg viewbox="0 0 16 12">
+<path d="M8 2.6c2.4 0 4.6.9 6.2 2.5l1.3-1.3A10.6 10.6 0 0 0 8 .8 10.6 10.6 0 0 0 .5 3.8l1.3 1.3A8.8 8.8 0 0 1 8 2.6Zm0 3.6c1.4 0 2.7.5 3.7 1.5L13 6.4a7 7 0 0 0-10 0l1.3 1.3c1-1 2.3-1.5 3.7-1.5Zm0 3.6c.5 0 1 .2 1.3.5L8 11.6 6.7 10.3c.3-.3.8-.5 1.3-.5Z"></path></svg><svg viewbox="0 0 27 13">
+<rect fill="none" height="12" opacity=".4" rx="3.5" stroke="currentColor" width="23" x=".5" y=".5"></rect>
+<rect height="9" rx="2" width="17" x="2" y="2"></rect>
+<path d="M25 4.5v4c.8-.3 1.3-1.1 1.3-2s-.5-1.7-1.3-2Z" opacity=".4"></path></svg></span>
+</div>
+<img alt="완료한 레벨에 별이 표시된 어드벤처 레벨 지도" height="1500" loading="lazy" src="../img/screens/screen-4.webp" width="786"/>
+<span aria-hidden="true" class="home-bar"></span>
+</div>
+</li>
+</ul>
+</section>
+<!-- FAMILY -->
+<section class="section family">
+<div class="family-card">
+<div>
+<h2>온 가족을 위해 만들었어요</h2>
+<ul>
+<li>계정 없음, 채팅 없음, 인앱 구매 없음</li>
+<li>광고는 전체 이용가, 비맞춤형이며 게임 중에는 절대 끼어들지 않아요</li>
+<li>큰 버튼, 읽기 쉬운 글씨, 즐거운 반응</li>
+<li>오프라인 지원, 13개 언어</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- ABOUT (search-friendly copy) -->
+<section class="section about" id="about">
+<h2>익숙한 블록 퍼즐, 할 거리는 더 많이</h2>
+<div class="about-grid">
+<div>
+<h3>플레이 방법</h3>
+<p>Hoppy Blocks는 이미 아는 블록 퍼즐 규칙을 그대로 따릅니다. 세 개의 조각을 8×8 격자로 드래그하고, 가로나 세로 한 줄을 꽉 채워 없애고, 계속 없애서 연속 보너스를 쌓으세요. 미리 계획하세요. 놓을 수 있는 조각이 없으면 게임 오버입니다. 금방 배우고 편안하게 즐기는, 매일 하기 좋은 두뇌 게임이에요.</p>
+</div>
+<div>
+<h3>블록 게임 그 이상</h3>
+<p>끝없는 클래식 외에도 어드벤처는 블록 퍼즐을 300 레벨의 여정으로 바꿔요. 숨은 다이아몬드, 별, 하트를 모으고, 점수 도전을 깨고, 모든 보드에서 별 세 개를 받아 보세요. 조각을 돌리고, 힌트를 받고, 오프라인에서도 어디서든 플레이하세요.</p>
+</div>
+<div>
+<h3>무료, 오프라인, 가족 친화적</h3>
+<p>Hoppy Blocks는 iPhone, iPad, Android 휴대폰용 무료 퍼즐 게임입니다. 계정과 인앱 구매가 없고 광고는 가족에게 안전하며 Wi-Fi 없이도 작동해서 출퇴근, 비행기, 짧은 휴식 시간에 딱이에요.</p>
+</div>
+</div>
+</section>
+<!-- FAQ -->
+<section class="section" id="faq">
+<h2>자주 묻는 질문</h2>
+<div class="faq">
+<details>
+<summary>Hoppy Blocks는 무료인가요?</summary>
+<p>네. Hoppy Blocks는 iPhone, iPad, Android용 무료 블록 퍼즐 게임이며 가족에게 안전한 광고로 운영됩니다. 인앱 구매는 없습니다.</p>
+</details>
+<details>
+<summary>진행 상황이 저장되나요?</summary>
+<p>네, 기기에 저장됩니다. 최고 점수, 어드벤처 별, 플레이 중인 게임은 앱을 닫아도 유지돼요. 앱을 삭제하면 함께 지워집니다.</p>
+</details>
+<details>
+<summary>오프라인으로 할 수 있나요?</summary>
+<p>네. 모든 기능이 연결 없이 작동하며, 광고만 불러오지 않아요.</p>
+</details>
+<details>
+<summary>아이에게 안전한가요?</summary>
+<p>네. 계정, 채팅, 인앱 구매가 없습니다. 광고는 전체 이용가의 비맞춤형 아동 대상 콘텐츠로 제한되며, 동영상은 플레이어가 직접 보기를 선택할 때만 재생돼요.</p>
+</details>
+<details>
+<summary>소리나 진동은 어떻게 끄나요?</summary>
+<p>홈 화면의 소리 및 진동 스위치를 사용하세요.</p>
+</details>
+<details>
+<summary>버그를 찾았거나 아이디어가 있어요</summary>
+<p><a href="mailto:hoppyblocks.support@gmail.com">hoppyblocks.support@gmail.com</a>으로 보내 주세요. 사용 중인 기기와 iOS인지 Android인지 알려 주세요.</p>
+</details>
+</div>
+</section>
+<!-- FINAL CTA -->
+<section class="section final" id="download">
+<img alt="" class="final-icon" height="96" src="../img/icon.png" width="96"/>
+<h2>App Store 곧 출시</h2>
+<p class="final-note">Hoppy Blocks가 거의 준비됐어요. iPhone, iPad, Android에서 무료로 즐길 수 있어요.</p>
+<div class="stores center">
+<span class="store">
+<svg aria-hidden="true" viewbox="0 0 24 24">
+<path d="M7 2h10a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Zm0 3v13h10V5H7Zm5 14.2a1 1 0 1 0 0 .01Z"></path>
+</svg>
+<span><small>곧 출시</small>App Store</span>
+</span>
+<span class="store">
+<svg aria-hidden="true" viewbox="0 0 24 24">
+<path d="M5 3.5v17a1 1 0 0 0 1.5.86l14-8.5a1 1 0 0 0 0-1.72l-14-8.5A1 1 0 0 0 5 3.5Z"></path>
+</svg>
+<span><small>곧 출시</small>Google Play</span>
+</span>
+</div>
+</section>
+<!-- STUDIO -->
+<section aria-labelledby="studio-title" class="section studio">
+<div class="studio-card">
+<img alt="" height="80" src="../img/joytap.webp" width="80"/>
+<div>
+<h2 id="studio-title">Joytap Games 제작</h2>
+<p>휴대폰으로 즐기는 차분하고 알록달록한 게임. 다른 게임 <a href="https://glossmaze.com/">Gloss Maze</a>는 굴러가는 공이 지나간 모든 칸을 칠하는 미로 게임이에요.</p>
+</div>
+<a class="yt" href="https://www.youtube.com/@joytap_games" rel="noopener">
+<svg aria-hidden="true" viewbox="0 0 24 24">
+<path d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2C2 8.8 2 12 2 12s0 3.2.4 4.8a2.5 2.5 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8c.4-1.6.4-4.8.4-4.8s0-3.2-.4-4.8ZM10 15V9l5.2 3L10 15Z"></path>
+</svg> YouTube에서 보기 </a>
+</div>
+</section>
+</main>
+<footer class="footer"><span>© 2026 Joytap Games</span> <a href="privacy/">개인정보처리방침</a> <a href="mailto:hoppyblocks.support@gmail.com">지원</a> <a href="https://www.youtube.com/@joytap_games" rel="noopener">YouTube</a></footer>
+</body>
+</html>
